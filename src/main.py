@@ -21,9 +21,9 @@ def main():
     app = QApplication(sys.argv)
     window = Window()
     window.show()
+    logger.log(f"finishing {config.APP_NAME} v{config.APP_VERSION}")
     sys.exit(app.exec())
 
-    logger.log(f"Finishing {config.APP_NAME} v{config.APP_VERSION}")
 
 if __name__ == "__main__":
     main()

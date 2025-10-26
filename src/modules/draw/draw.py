@@ -43,7 +43,8 @@ class PaintWidget(QWidget):
                 self._last_point = event.position().toPoint()
             case Qt.MouseButton.RightButton:
                 logger.log("M2 pressed!")
-                self._brush_size = 15
+                self._brush_size = config.DEFAULT_BRUSH_SIZE + 15
+                self._drawing = True
                 self._drawing = True
                 self._erase_mode = True
                 self._last_point = event.position().toPoint()
