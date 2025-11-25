@@ -19,6 +19,6 @@ else:
     print(f"Config file not found at {CONFIG_PATH}")
 
 APP_NAME = data.get("APP_NAME", "QTPaint")
-APP_VERSION = data.get("APP_VERSION", "2.0.0")
-DEBUG_MODE = data.get("DEBUG_MODE", True)
+APP_VERSION = data.get("APP_VERSION", "VersionNotFound")
+DEBUG_MODE = data.get("DEBUG_MODE", False)
 DEFAULT_BRUSH_SIZE = data.get("DEFAULT_BRUSH_SIZE", 5)
